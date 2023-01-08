@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -221,8 +222,7 @@ void main(){
             case '7':
               system("cls");
               if(a!=NULL){
-                printf("Entrez un mot : ");
-                scanf("%s", word);
+                printf("Entrez un mot : ");    scanf("%s", word);
                 printf("\nEntrez la page a supprimer : ");
                 scanf("%d", &pg);
                 if(recherche_mot_inserer_supprimer_page(&a,word,0,2,pg)==false){
@@ -251,26 +251,23 @@ void main(){
         fflush(stdout);
         usleep(17000); let='0';
     }
-      } 
-                      
-                    
+      }
                   }
             }
         }
       else if(partie == 2){
         system("cls");
-        if(b==NULL){
+        if(a==NULL){
   here : printf(Rouge"Arbre non construit..."fin Cyan" veuillez le construire d'abord\n Voici la partie 2 taper 1 ou 2 pour construir l arbre "fin); e=1; goto parti1;
         }else
             { while(let!='0'){
             system("cls");
 ExitPartie1:menu3 ();
             scanf(" %c", &let);
-             
             switch(let){
-              case 0:
+              case '0':
                   system("cls");
-                  
+
                   break;
               case '1':
                 system("cls");
@@ -282,7 +279,7 @@ ExitPartie1:menu3 ();
        refrche:system("cls"); if(b==NULL) {printf(Rouge"Veuillez construire d'abord l'arbre."fin); sortir();}
               else{ printf("tapez "Vert" 1\033[0m pour afficher l arbre ordonnee utilisant "Vert"le parcours Infixe\033[0m \ntaper "Vert" n'importe quoi\033[0m pour afficher l arbre utilisant "Vert"le parcours en largeur \033[0m(En precisant pour chaque noeud le fils gauche et le fils droit)."fin);
                scanf(" %c",&let); 
-               if (let=='1')parcoursInfixe(a);else affiche_struct_arbre(b);
+               if (let=='1')parcoursInfixe(b);else affiche_struct_arbre(b);
               printf(Jaune"\ntapez 1 pour refrche"fin);
               printf(Jaune"\nTapez n'importe quoi pour revenir."fin);
               scanf(" %c",&let); 
@@ -308,15 +305,15 @@ ExitPartie1:menu3 ();
                  else {printf(Rouge"Veuillez construire d'abord l'arbre."fin);} sortir();
                 break;
               case '5':
-      Réessayer: system("cls"); if(b==NULL) {printf(Rouge"Veuillez construire d'abord l'arbre."fin);}
+      Reessayer: system("cls"); if(b==NULL) {printf(Rouge"Veuillez construire d'abord l'arbre."fin);}
                 else{ printf("Entrez un mot : ");
                  scanf("%s", word);
                  if(recherche_mot_inserer_supprimer_page(&b,word,0,0,0)==false){
-                    printf(Rouge"Mot n'existe pas...\ntappez 5 pour Réessayer."fin);
+                    printf(Rouge"Mot n'existe pas...\ntappez 5 pour Reessayer."fin);
                     scanf("%d",&choix);
                   } else supprimerMot(&b,word);
                       printf(Vert "\nla suppression faite avec succes"fin);
-                     if (choix==5) goto Réessayer;}
+                     if (choix==5) goto Reessayer;}
                       sortir();
                 break;
                 
@@ -357,14 +354,6 @@ ExitPartie1:menu3 ();
             switch(let){
               case '0':
                   printf("\e[1;1H\e[2J");
-                 strcpy (str,Jaune"Merci d'avoir utilise le logiciel!"fin);
-                 for (int i = 0; str[i] != '\0'; i++)
-                  {   
-                      printf("%c", str[i]);
-                      fflush(stdout);
-                      usleep(17000); 
-                  }
-      
                   break;
               case '1':
                 printf("\e[1;1H\e[2J");
