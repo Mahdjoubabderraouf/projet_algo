@@ -12,6 +12,7 @@ La deuxième partie serait de finaliser l’algorithme en incluant les fonctions
 dans le programme.
 
 On va tout d’abord introduire le menu, il aura la forme suivante :
+
 ![image](https://github.com/Mahdjoubabderraouf/projet_algo/assets/95053965/a4a32a73-eed0-4f81-b75d-c8adea8b90cd)
 
 De cette façon, l’utilisateur ait à choisir la partie qui l’intéresse, il faut savoir d’abord que les
@@ -20,12 +21,15 @@ partie III dépend aussi de la partie II, il serait donc impossible à l’utili
 II sans avoir traité la partie I, et de traiter la partie III sans avoir traité la partie II.
 
 Lorsque l’utilisateur choisi la partie I, On affichera un autre menu qui a la forme suivante :
+
 ![image](https://github.com/Mahdjoubabderraouf/projet_algo/assets/95053965/a05e9d3b-483d-4658-966e-1203db81fc73)
 
 Pour la partie II voici la forme de son menu :
+
 ![image](https://github.com/Mahdjoubabderraouf/projet_algo/assets/95053965/52183f47-ce30-47f9-8b87-5c5d790ff23b)
 
 Pour la dernière partie voici la forme de son menu :
+
 ![image](https://github.com/Mahdjoubabderraouf/projet_algo/assets/95053965/acfaad61-d5b8-4ed0-ac94-9b57befb3766)
 
 
